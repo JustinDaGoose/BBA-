@@ -1,0 +1,42 @@
+
+CRO_rebellion_power = {
+	initial_value = -0.5
+	left_side = rebellion_power
+	right_side = pavelic_power
+	range = {
+		id = mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+                        war_support_factor = -0.20
+		}
+	}
+	side = {
+		id = rebellion_power
+		icon = GFX_idea_YUG_yugoslavian_general_staff
+		range = {
+			id = power_to_the_rebels
+			min = -1
+			max = -0.1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.2
+                        war_support_factor = -0.30
+			}
+		}
+	}
+	side = {
+		id = pavelic_power
+		icon = GFX_idea_saf_ossewabrandwag_fascism
+		range = {
+			id = power_to_pavelic
+			min = 0.1
+			max = 1
+			modifier = {
+				
+			}
+		}
+	}
+}
