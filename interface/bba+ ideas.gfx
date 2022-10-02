@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_slavic_resistance"
+		texturefile = "gfx/interface/ideas/slavic_resistance.dds"
+		noOfFrames = 18
+	}
+
+	
+}
