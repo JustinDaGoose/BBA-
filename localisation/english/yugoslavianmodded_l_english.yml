@@ -8,6 +8,6 @@ CRO_tt1:0 "§CThis will install a puppet in all of your owned Croatian states an
          yug_claims.1.t:0 "Yugoslavia Recognizes our claims"
          yug_claims.3.a:0 "The great State of Croatia shall rule all (play as croatia)
          CRO.1.t:0 "The State of Croatia"
-         CRO.1.d:0 "We have installed a satelite government over northern yugoslavia. Would you like to play as croatia?"
+         CRO.1.g:0 "We have installed a satelite government over northern yugoslavia. Would you like to play as croatia?"
          CRO.1.a:0 "Long live Croatia! (Play as croatia)"
          CRO.1.b:0 "The nation shall stand under our command"
