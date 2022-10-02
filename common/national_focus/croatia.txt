@@ -1,0 +1,52 @@
+focus_tree = {
+	id = croatian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CRO
+			has_dlc = "By Blood Alone"
+		}
+
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = CRO_a_new_beginning
+		icon = GFX_focus_YUG_banovina_of_croatia
+		x = 10
+		y = 0
+
+		allow_branch = { 
+has_government = fascism
+overlord = { original_tag = ITA }
+}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+mark_tree_layout_as_dirty = yes
+		}
+	}
