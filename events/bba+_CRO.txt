@@ -1,0 +1,28 @@
+add_namespace = CRO
+
+
+
+country_event = {
+
+	id = CRO.1
+	title = CRO.1.t
+	desc = {
+		text = CRO.1.d
+		trigger = {
+		}
+	}
+	desc = {
+		text = CRO.1.g
+	}
+	picture = GFX_report_event_ace_promoted
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CRO.1.a
+CRO = { change_tag_from = ITA }
+}
+	option = {
+		name = CRO.1.b
+}
+}
