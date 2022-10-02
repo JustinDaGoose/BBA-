@@ -45,9 +45,6 @@ owns_state = 163
     limit = { is_owned_by = ITA }
     CRO = { transfer_state = PREV }
 }
-
-ITA = { country_event = { id = yug_claims.3 } }
-
 				set_autonomy = {
 				    target = CRO
 				    autonomy_state = autonomy_puppet
