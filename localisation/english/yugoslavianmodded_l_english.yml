@@ -1,0 +1,8 @@
+﻿l_english:
+ yug_claims.2.t:0 "Yugoslavia surrenders Italian Claims"
+  yug_claims.2.d:0 "The Leader of Yugoslavia has announced today that they will officially recognize yugoslavian claims to not let the situation escalate any further. The citizens of the nation are left in shock of this sudden movement. And riots begin to form in the nation. "
+   YUG_surrender_claims2:0 "Surrender Italian Claims"
+      YUG_surrender_claims2_desc:0 "Benito has made it clear that he has ambition. Us as a nation are inferior to this roman superpower, we should surrender the claims to make sure that no more future conflict is created by obeying to his orders this time."
+         colonial_government_in_croatia:0 "Establish a Croatian State"
+CRO_tt1:0 "§CThis will install a puppet in all of your owned Croatian states and afterwards they may ask ask for ownership of more owned states"
+         yug_claims.1.t:0 "Yugoslavia Recognizes our claims"
