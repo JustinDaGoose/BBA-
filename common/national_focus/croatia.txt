@@ -34,6 +34,51 @@ overlord = { original_tag = ITA }
 		}
 
 		available = {
+has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			set_power_balance = {
+				id = CRO_rebellion_power
+				set_default = yes
+mark_focus_tree_layout_dirty = yes
+			}
+
+
+			add_power_balance_value = {
+				id = CRO_rebellion_power
+				value = 0.1 
+			}
+		}
+	}
+
+	focus = {
+		id = CRO_prepare_for_the_second_holocaust
+		icon = GFX_focus_ger_reichskommisariats
+		x = 10
+		y = 1
+
+		allow_branch = { 
+
+}
+prerequisite = { focus = CRO_a_new_beginning }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
 
 		}
 		
@@ -48,5 +93,243 @@ overlord = { original_tag = ITA }
 
 		completion_reward = {
 mark_tree_layout_as_dirty = yes
+
+			add_power_balance_value = {
+				id = CRO_rebellion_power
+				value = 0.15
+}
+add_stability = 0.1
 		}
 	}
+
+	focus = {
+		id = CRO_true_national_unity
+prerequisite = { focus = CRO_prepare_for_the_second_holocaust }
+		icon = GFX_united_croatia
+		x = 10
+		y = 3
+
+		allow_branch = { 
+}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+add_ideas = CRO_martial_law 
+add_political_power = 50
+			add_power_balance_value = {
+				id = CRO_rebellion_power
+				value = 0.05
+}
+		}
+	}
+	focus = {
+		id = CRO_demand_bosnia
+prerequisite = { focus = CRO_true_national_unity }
+		icon = GFX_focus_YUG_safeguard_bosnia
+		x = 10
+		y = 4
+
+		allow_branch = { 
+}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+ITA = {
+owns_state = 804
+owns_state = 104
+}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+ITA = { country_event = { id = CRO.2 } }
+}
+}
+	focus = {
+		id = CRO_legitimize_identity
+prerequisite = { focus = CRO_true_national_unity }
+		icon = GFX_goal_demand_sudetenland
+		x = 12
+		y = 4
+
+		allow_branch = {
+}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+add_autonomy_ratio = {
+	value = 0.2
+	localization = CRO_legitimate_natione
+}
+			add_power_balance_value = {
+				id = CRO_rebellion_power
+				value = 0.05
+}
+}
+}
+	focus = {
+		id = CRO_reinforce_law
+prerequisite = { focus = CRO_true_national_unity }
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 4
+
+		allow_branch = {
+}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+swap_ideas = { 
+  remove_idea = CRO_martial_law
+  add_idea = CRO_martial_law_1
+}
+mark_focus_tree_layout_dirty = yes
+}
+}
+	focus = {
+		id = CRO_restore_order
+prerequisite = { focus = CRO_reinforce_law }
+prerequisite = { focus = CRO_legitimize_identity }
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 6
+
+		allow_branch = {
+
+}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_power_balance_in_range = {
+				id = CRO_rebellion_power
+				range > mid_range
+			}
+has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+  remove_ideas = CRO_slavic_revolt_1
+}
+}
+	focus = {
+		id = CRO_foreign_affairs
+prerequisite = {
+}
+		icon = GFX_goal_generic_forceful_treaty
+		x = 15
+		y = 0
+
+		allow_branch = {
+CRO = {
+owns_state = 104
+owns_state = 804
+}
+}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+owns_state = 104
+owns_state = 804
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+}
+}
+}
